@@ -1,6 +1,3 @@
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-
 /*
 Realizar un programa para gestionar una Lista de tareas con POO.
 
@@ -15,5 +12,34 @@ y un estado que indique si está pendiente o ya fue realizada (en este caso, deb
 
 
 fun main() {
+    val tareas = ListaTareas()
+    while (true) {
+        println("MENU DE GESTIÓN DE TAREAS ---")
+        println("1. Agregar tarea")
+        println("2. Eliminar tarea")
+        println("3. Cambiar estado de una tarea")
+        println("4. Mostrar todas las tareas")
+        println("5. Mostrar tareas pendientes")
+        println("6. Mostrar tareas realizadas")
+        println("0. Salir")
+        print("Selecciona una opción: ")
+        val opcion = readln().toInt()
+        if (opcion == 1){
+            val tarea1 = tareas.agregarTarea()
+        }
+        if (opcion == 2){
+            tareas.eliminarTarea()
+        }
+        if (opcion == 3){
+            tareas.cambiarEstadoTarea()
+        }
+        if (opcion == 4){}
+        if (opcion == 5){}
+        if (opcion == 6){}
+        if (opcion == 0){}
+        else{
+            println("Elige una opcion de las disponibles!!!")
+        }
 
+    }
 }
